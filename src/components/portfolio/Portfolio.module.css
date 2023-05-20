@@ -11,7 +11,7 @@
 .portfolio > * {
   background-color: hsl(var(--clr-bg1-100));
   border-radius: var(--bradius-600);
-  box-shadow: 0 0 2px hsl(var( --clr-bg1-700));
+  box-shadow: 0 0 2px hsl(var(--clr-bg1-800));
 }
 
 .assets {
