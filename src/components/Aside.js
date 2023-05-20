@@ -4,7 +4,7 @@ import Brand from "./brand/Brand";
 
 const Aside = () => {
   return (
-    <aside>
+    <aside className={classes.aside}>
       <section className={classes.brand}>
         <Brand />
       </section>

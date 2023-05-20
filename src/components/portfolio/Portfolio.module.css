@@ -1,7 +1,6 @@
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 5fr;
   grid-template-areas: "assets the-content";
 }
 

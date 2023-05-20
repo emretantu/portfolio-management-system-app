@@ -7,7 +7,7 @@ const Main = () => {
   const [title, setTitle] = useState("Test");
 
   return (
-    <main>
+    <main className={classes.main}>
       <header className={classes.title}>
         <h1>{title}</h1>
       </header>
