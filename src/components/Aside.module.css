@@ -1,5 +1,5 @@
 aside {
-  --left-right-padding: 0.8rem;
+  --left-right-padding: 1rem;
 
   grid-column: content-start / aside-main;
 

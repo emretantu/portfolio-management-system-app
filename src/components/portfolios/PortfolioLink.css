@@ -1,5 +1,6 @@
 .portfolios__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 
   padding: 0.5rem calc(var(--left-right-padding) / 2);
   border-radius: 0.4rem;
