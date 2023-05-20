@@ -5,7 +5,7 @@ const Aside = () => {
     <>
       <aside>
         <section className={classes.brand}>
-
+          
         </section>
 
         <section className={classes["portfolios-list"]}>
