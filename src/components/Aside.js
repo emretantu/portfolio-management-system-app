@@ -1,5 +1,5 @@
 import classes from "./Aside.module.css";
-import Portfolios from "./portfolios/Portfolios";
+import PortfoliosList from "./portfolios/PortfoliosList";
 import Brand from "./brand/Brand";
 
 const Aside = () => {
@@ -10,7 +10,7 @@ const Aside = () => {
       </section>
 
       <section className={classes["portfolios-list"]}>
-        <Portfolios />  
+        <PortfoliosList />  
       </section>
 
       <section className={classes.nav}>

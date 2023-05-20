@@ -1,19 +1,22 @@
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 3fr 8fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "assets the-content";
+  column-gap: 0.5rem;
+
+  height: 100%;
 }
 
 .portfolio > * {
   background-color: hsl(var(--clr-bg1-100));
+  border-radius: var(--bradius-600);
 }
 
 .assets {
   grid-area: assets;
-  background-color: red;
 }
 
 .content {
   grid-area: the-content;
-  background-color: yellow;
 }

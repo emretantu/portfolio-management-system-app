@@ -1,7 +1,7 @@
 import PortfolioLink from "./PortfolioLink";
-import "./Portfolios.css"
+import "./PortfoliosList.css"
 
-const Portfolios = () => {
+const PortfoliosList = () => {
   return (
     <ul className="portfolios">
       <PortfolioLink
@@ -23,4 +23,4 @@ const Portfolios = () => {
   );
 }
 
-export default Portfolios;
+export default PortfoliosList;
