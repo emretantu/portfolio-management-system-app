@@ -44,7 +44,15 @@ p, h1, h2, h3, h4, h5, h6 {
   --clr-accent1-800: 0, 0%, 7%;
   
   /*Greenish*/
+  --clr-accent2-900: 170, 100%, 15%;
+  --clr-accent2-800: 170, 90%, 20%;
+  --clr-accent2-700: 170, 80%, 23%;
+  --clr-accent2-600: 170, 70%, 25%;
+  --clr-accent2-500: 170, 60%, 26%;
   --clr-accent2-400: 170, 50%, 27%;
+  --clr-accent2-300: 170, 45%, 33%;
+  --clr-accent2-200: 170, 40%, 38%;
+  --clr-accent2-100: 170, 35%, 42%;
 
   /*Brownish*/
   --clr-accent3-400: 28, 45%, 57%;

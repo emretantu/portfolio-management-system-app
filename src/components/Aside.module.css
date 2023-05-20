@@ -26,14 +26,6 @@ aside {
   padding: 0 var(--left-right-padding);
 }
 
-.brand__link {
-  color: hsl(var(--clr-accent1-800));
-  text-decoration: none;
-  font-family: var(--ff-title);
-  font-weight: var(--fw-title-500);
-  font-size: 2rem;
-}
-
 .portfolios-list {
   grid-area: portfolios-list;
 }
