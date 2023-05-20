@@ -1,0 +1,20 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 5fr;
+  grid-template-areas: "assets the-content";
+}
+
+.portfolio > * {
+  background-color: hsl(var(--clr-bg1-100));
+}
+
+.assets {
+  grid-area: assets;
+  background-color: red;
+}
+
+.content {
+  grid-area: the-content;
+  background-color: yellow;
+}

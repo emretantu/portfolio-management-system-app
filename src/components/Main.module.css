@@ -15,10 +15,8 @@ main {
 .title {
   grid-area: header;
   padding: 0.7rem 0;
-  background-color: red;
 }
 
 .content-container {
   grid-area: content-container;
-  background-color: yellow;
 }

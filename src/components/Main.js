@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./Main.module.css";
+import Portfolio from "./portfolio/Portfolio";
 
 const Main = () => {
 
@@ -11,7 +12,7 @@ const Main = () => {
         <h1>{title}</h1>
       </header>
       <section className={classes["content-container"]}>
-        Test Section
+        <Portfolio />
       </section>
     </main>
   );
