@@ -5,4 +5,6 @@
 
   display: grid;
   grid-template-columns: [content-start] 2fr [aside-main] 5fr [content-end];
+
+  background-color: hsl(var(--clr-bg1-100));
 }

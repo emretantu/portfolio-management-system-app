@@ -1,10 +1,20 @@
 import classes from "./Aside.module.css";
 
-const Aside = ({ children }) => {
+const Aside = () => {
   return (
     <>
       <aside>
-        {children}
+        <section className={classes.brand}>
+
+        </section>
+
+        <section className={classes["portfolios-list"]}>
+          
+        </section>
+
+        <section className={classes.nav}>
+          
+        </section>
       </aside>
     </>
   );

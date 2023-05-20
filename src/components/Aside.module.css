@@ -1,4 +1,26 @@
 aside {
   grid-column: content-start / aside-main;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-areas:
+    "brand"
+    "portfolios-list"
+    "nav";
+}
+
+.brand {
+  grid-area: brand;
   background-color: red;
+}
+
+.portfolios-list {
+  grid-area: portfolios-list;
+  background-color: blue;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: yellow;
 }

@@ -1,11 +1,11 @@
 import classes from "./Main.module.css";
 
-const Main = ({ children }) => {
+const Main = () => {
   return (
     <>
-     <main>
-      {children}
-     </main>
+      <main>
+        
+      </main>
     </>
   );
 }
