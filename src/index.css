@@ -91,6 +91,17 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-title-700: 700;
   --fw-title-800: 800;
   --fw-title-900: 900;
+
+  /*Border Radius*/
+  --bradius-900: 2rem;
+  --bradius-800: 1.5rem;
+  --bradius-700: 1rem;
+  --bradius-600: 0.7rem;
+  --bradius-500: 0.5rem;
+  --bradius-400: 0.4rem;
+  --bradius-300: 0.3rem;
+  --bradius-200: 0.2rem;
+  --bradius-100: 0.1rem;
   
 }
 
