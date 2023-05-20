@@ -1,3 +1,24 @@
 main {
   grid-column: aside-main / content-end;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+    "header"
+    "content-container";
+  
+  padding: 0 1rem 1rem 1rem;
+
+}
+
+.title {
+  grid-area: header;
+  padding: 0.7rem 0;
+  background-color: red;
+}
+
+.content-container {
+  grid-area: content-container;
+  background-color: yellow;
 }

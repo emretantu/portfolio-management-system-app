@@ -4,21 +4,19 @@ import Brand from "./brand/Brand";
 
 const Aside = () => {
   return (
-    <>
-      <aside>
-        <section className={classes.brand}>
-          <Brand />
-        </section>
+    <aside>
+      <section className={classes.brand}>
+        <Brand />
+      </section>
 
-        <section className={classes["portfolios-list"]}>
-          <Portfolios />  
-        </section>
+      <section className={classes["portfolios-list"]}>
+        <Portfolios />  
+      </section>
 
-        <section className={classes.nav}>
-          
-        </section>
-      </aside>
-    </>
+      <section className={classes.nav}>
+        
+      </section>
+    </aside>
   );
 }
 
