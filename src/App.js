@@ -1,6 +1,9 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Aside from './components/Aside';
+import Main from './components/Main';
+import React from 'react';
 
 axios.defaults.baseURL = 'http://localhost:8765/api/v1';
 
@@ -101,9 +104,16 @@ function App() {
   }, [])
 
   return (
-    <>
-      <h1>PMS APP</h1>
-    </>
+    <React.Fragment>
+      <div className='app-container'>
+        <Aside>
+
+        </Aside>
+        <Main>
+          
+        </Main>
+      </div>
+    </React.Fragment>
   );
 
 }
