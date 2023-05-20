@@ -37,10 +37,8 @@ aside > * {
 
 .portfolios-list {
   grid-area: portfolios-list;
-  
 }
 
 .nav {
   grid-area: nav;
-  background-color: yellow;
 }

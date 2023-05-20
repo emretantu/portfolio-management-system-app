@@ -1,5 +1,6 @@
 import classes from "./Aside.module.css";
 import { Link } from "react-router-dom"
+import Portfolios from "./portfolios/Portfolios";
 
 const Aside = () => {
   return (
@@ -10,7 +11,7 @@ const Aside = () => {
         </section>
 
         <section className={classes["portfolios-list"]}>
-          
+          <Portfolios />  
         </section>
 
         <section className={classes.nav}>

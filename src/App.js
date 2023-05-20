@@ -94,7 +94,6 @@ function App() {
   useEffect(() => {
     getAllUserData()
       .then((res) => {
-        console.log("Başlarken", userData);
         setUserData(res);
       })
       .catch((error) => {
@@ -106,12 +105,8 @@ function App() {
   return (
     <React.Fragment>
       <div className='app-container'>
-        <Aside>
-
-        </Aside>
-        <Main>
-          
-        </Main>
+        <Aside />
+        <Main />
       </div>
     </React.Fragment>
   );
