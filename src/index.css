@@ -85,7 +85,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root {
   display: grid;
-  grid-template-columns: [page-start] 1fr [content-start] 1024px [content-end] 1fr [page-end];
+  /* grid-template-columns: [page-start] 1fr [content-start] 1024px [content-end] 1fr [page-end]; */
+  grid-template-columns: [content-start] 1fr [content-end];
 
   width: 100%;
   height: 100vh;

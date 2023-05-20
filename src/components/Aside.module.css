@@ -12,7 +12,18 @@ aside {
 
 .brand {
   grid-area: brand;
-  background-color: red;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brand__link {
+  color: hsl(var(--clr-accent1-800));
+  text-decoration: none;
+  font-family: var(--ff-title);
+  font-size: 2rem;
+  font-weight: var(--fw-title-400);
 }
 
 .portfolios-list {
