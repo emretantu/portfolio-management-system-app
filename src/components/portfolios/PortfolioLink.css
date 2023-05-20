@@ -1,0 +1,21 @@
+.portfolios__link {
+  display: block;
+
+  padding: 0.5rem calc(var(--left-right-padding) / 2);
+  border-radius: 0.4rem;
+
+  font-family: var(--ff-base);
+  font-weight: var(--fw-base-400);
+  font-size: 1rem;
+  color: hsl(var(--clr-accent1-800));
+  text-decoration: none;
+}
+
+.portfolios__link:is(:hover, :focus-visible) {
+  background-color: hsl(var(--clr-bg1-300));
+}
+
+.active {
+  background-color: hsl(var(--clr-bg1-200));
+  font-weight: var(--fw-base-700);;
+}

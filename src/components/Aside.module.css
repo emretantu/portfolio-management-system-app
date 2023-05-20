@@ -1,4 +1,6 @@
 aside {
+  --left-right-padding: 0.8rem;
+
   grid-column: content-start / aside-main;
 
   display: grid;
@@ -13,10 +15,6 @@ aside {
   box-shadow: 0 0 2px 1px hsl(var( --clr-bg1-900));
 }
 
-aside > * {
-  padding: 0 0.8rem;
-}
-
 .brand {
   grid-area: brand;
   
@@ -25,6 +23,7 @@ aside > * {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 var(--left-right-padding);
 }
 
 .brand__link {

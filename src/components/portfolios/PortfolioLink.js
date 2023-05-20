@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./PortfolioLink.css"
 
 const PortfolioLink = ({ to, children }) => {
   return (
     <li>
-      <Link to={to}>
+      <NavLink to={to} className="portfolios__link">
         {children}
-      </Link>
+      </NavLink>
     </li>
   );
 }
