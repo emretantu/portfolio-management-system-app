@@ -8,11 +8,20 @@ aside {
     "brand"
     "portfolios-list"
     "nav";
+
+  background-color: hsl(var(--clr-bg1-100));
+  box-shadow: 0 0 2px 1px hsl(var( --clr-bg1-900));
+}
+
+aside > * {
+  padding: 0 0.8rem;
 }
 
 .brand {
   grid-area: brand;
   
+  /* border-bottom: 0.1rem solid hsl(var( --clr-bg1-900)); */
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -22,13 +31,13 @@ aside {
   color: hsl(var(--clr-accent1-800));
   text-decoration: none;
   font-family: var(--ff-title);
+  font-weight: var(--fw-title-500);
   font-size: 2rem;
-  font-weight: var(--fw-title-400);
 }
 
 .portfolios-list {
   grid-area: portfolios-list;
-  background-color: blue;
+  
 }
 
 .nav {
