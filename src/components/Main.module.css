@@ -1,4 +1,6 @@
 .main {
+  --base-padding: 1.4rem;
+
   grid-column: aside-main / content-end;
   
   display: grid;
@@ -8,7 +10,7 @@
     "header"
     "content-container";
   
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 var(--base-padding) var(--base-padding) var(--base-padding);
 
   background-color: hsl(var(--clr-bg1-400));
 
@@ -16,7 +18,8 @@
 
 .title {
   grid-area: header;
-  padding: 0.7rem 0;
+  padding: calc(var(--base-padding) - 0.3rem) 0;
+  /*Line height: 1.6 | 1.6 - 1 = 0.6 | 0.6 / 2 = 0.3 | 0.3rem*/
 }
 
 .content-container {

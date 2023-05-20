@@ -3,7 +3,7 @@
   grid-template-columns: 3fr 8fr;
   grid-template-rows: 1fr;
   grid-template-areas: "assets the-content";
-  column-gap: 0.5rem;
+  column-gap: 0.6rem;
 
   height: 100%;
 }
