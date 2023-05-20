@@ -13,7 +13,7 @@ function App() {
       const response = await axios.get(`/users/${userId}`);
       return response.data;
     } catch (error) {
-      console.err(error);
+      return error;
     }
   }
 
@@ -31,7 +31,7 @@ function App() {
       const response = await axios.get(`/transactions/${userId}`);
       return response.data;
     } catch (error) {
-      console.err(error);
+      return error;
     }
   }
 
@@ -40,7 +40,7 @@ function App() {
       const response = await axios.get(`/assets/${userId}`);
       return response.data;
     } catch (error) {
-      console.err(error);
+      return error;
     }
   }
 
@@ -49,7 +49,7 @@ function App() {
       const response = await axios.get(`/asset-types/${userId}`);
       return response.data;
     } catch (error) {
-      console.err(error);
+      return error;
     }
   }
 
@@ -58,7 +58,7 @@ function App() {
       const response = await axios.get(`/transaction-types`);
       return response.data;
     } catch (error) {
-      console.err(error);
+      return error;
     }
   }
 
@@ -67,7 +67,7 @@ function App() {
       const response = await axios.get(`/currencies`);
       return response.data;
     } catch (error) {
-      console.err(error);
+      return error;
     }
   }
 
@@ -84,7 +84,7 @@ function App() {
       }
       return data;
     } catch (error) {
-      console.err(error);
+      return error;
     }    
   }
 
@@ -93,6 +93,9 @@ function App() {
       .then((res) => {
         console.log("Başlarken", userData);
         setUserData(res);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
