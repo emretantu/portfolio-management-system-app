@@ -1,5 +1,5 @@
 import PortfolioLink from "./PortfolioLink";
-import "./PortfoliosList.css";
+import classes from "./PortfoliosList.module.css";
 
 const data = [
   {pname: "Test 1", marketValue: "100", to:"/test1"},
@@ -10,7 +10,7 @@ const data = [
 const PortfoliosList = () => {
   return (
     
-    <ul className="portfolios">
+    <ul className={classes.portfolios}>
       {
         data.map((d) => {
           return (
