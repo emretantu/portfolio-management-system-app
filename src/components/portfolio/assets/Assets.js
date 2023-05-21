@@ -5,10 +5,10 @@ const Assets = () => {
   return (
     <div className={classes.assets}>
       <section className={classes.head}>
-        <AssetsList />
+        
       </section>
       <section className={classes.list}>
-
+        <AssetsList />
       </section>
     </div>
   );

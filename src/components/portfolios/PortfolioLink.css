@@ -18,5 +18,5 @@
 
 .active {
   background-color: hsl(var(--clr-bg1-200));
-  font-weight: var(--fw-base-700);;
+  font-weight: var(--fw-base-700);
 }
