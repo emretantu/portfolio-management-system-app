@@ -44,6 +44,7 @@ const PieChart = () => {
       .style('text-anchor', 'middle')
       .text((d) => d.data.name);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
