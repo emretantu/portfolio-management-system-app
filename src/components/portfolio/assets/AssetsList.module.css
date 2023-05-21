@@ -1,0 +1,4 @@
+.assets-list {
+  list-style: none;
+  padding: 0 calc(var(--left-right-padding) / 2);
+}
