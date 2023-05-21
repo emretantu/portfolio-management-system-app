@@ -1,24 +1,28 @@
 import PortfolioLink from "./PortfolioLink";
-import "./PortfoliosList.css"
+import "./PortfoliosList.css";
+
+const data = [
+  {pname: "Test 1", marketValue: "100", to:"/test1"},
+  {pname: "Test 2", marketValue: "400", to:"/test2"},
+  {pname: "Test 3", marketValue: "1100", to:"/test3"}
+]
 
 const PortfoliosList = () => {
   return (
+    
     <ul className="portfolios">
-      <PortfolioLink
-        pname="Test"
-        marketValue="50"
-        to="/test"
-      />
-      <PortfolioLink
-        pname="Test 2"
-        marketValue="50"
-        to="/test2"
-      />
-      <PortfolioLink
-        pname="Test 3"
-        marketValue="50"
-        to="/test3"
-      />
+      {
+        data.map((d) => {
+          return (
+            <PortfolioLink
+            pname={d.pname}
+            marketValue={d.marketValue}
+            to={d.to}
+            key={d.to}
+          />
+          );
+        })
+      }
     </ul>
   );
 }
