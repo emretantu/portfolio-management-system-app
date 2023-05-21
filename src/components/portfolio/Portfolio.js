@@ -1,3 +1,4 @@
+import PieChart from "../charts/PieChart";
 import classes from "./Portfolio.module.css";
 import Assets from "./assets/Assets";
 
@@ -9,7 +10,7 @@ const Portfolio = () => {
       </aside>
 
       <section className={classes.content}>
-        
+        <PieChart />
       </section>
     </div>
   );

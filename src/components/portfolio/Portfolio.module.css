@@ -20,4 +20,5 @@
 
 .content {
   grid-area: the-content;
+  padding: 1rem; /*!*/
 }
