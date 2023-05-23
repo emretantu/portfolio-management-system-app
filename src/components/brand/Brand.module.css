@@ -1,7 +1,6 @@
 .brand__link {
   color: hsl(var(--clr-accent2-400));
   text-decoration: none;
-  font-family: var(--ff-title);
-  font-weight: var(--fw-title-500);
+  font-weight: var(--fw-base-500);
   font-size: 2rem;
 }
