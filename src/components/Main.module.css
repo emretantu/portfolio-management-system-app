@@ -5,11 +5,14 @@
   
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: max-content minmax(30rem, 1fr);
   grid-template-areas:
     "header"
     "content-container";
   
+  height: 100%; /*App container 100vh*/
+  overflow: hidden;
+
   padding: 0 var(--base-padding) var(--base-padding) var(--base-padding);
 
   background-color: hsl(var(--clr-bg1-400));
