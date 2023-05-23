@@ -5,6 +5,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: max-content 1fr;
   grid-template-areas: "head" "list";
+
+  height: 100%;
 }
 
 .head {
@@ -13,4 +15,6 @@
 
 .list {
   grid-area: list;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

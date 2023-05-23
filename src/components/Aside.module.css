@@ -12,7 +12,7 @@
     "nav";
 
   height: 100%; /*App container 100vh*/
-  overflow: hidden;
+  /* overflow: hidden; */
 
   background-color: hsl(var(--clr-bg1-100));
   box-shadow: 0 0 2px 1px hsl(var( --clr-bg1-900));

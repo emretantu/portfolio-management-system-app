@@ -16,9 +16,13 @@
 
 .assets {
   grid-area: assets;
+  height: 100%;
+  overflow: hidden;
 }
 
 .content {
   grid-area: the-content;
   padding: 1rem; /*!*/
+  overflow-y: auto;
+  overflow-x: hidden;
 }
