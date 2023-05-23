@@ -5,9 +5,10 @@
 
   display: grid;
   grid-template-columns: [content-start] 1fr [aside-main] 4fr [content-end];
+  grid-template-rows: minmax(30rem, 1fr);
 
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
 
   background-color: hsl(var(--clr-bg1-100));
 }
