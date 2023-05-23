@@ -109,3 +109,20 @@ p, h1, h2, h3, h4, h5, h6 {
 body * {
   color: hsl(var(--clr-accent1-800));
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 95%, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 60%);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 45%);
+}
