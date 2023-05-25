@@ -1,9 +1,18 @@
 import { NavLink} from "react-router-dom";
-import classes from "./PortfolioLink.module.css"
+import classes from "./PortfolioLink.module.css";
+import { useEffect, useRef, useState } from "react";
 
 const PortfolioLink = ({ to, pname, marketValue }) => {
+
+  const [charLimit, setCharLimit] = useState(100);
+  const portfolioNameRef = useRef();
+
+  useEffect(() => {
+    setCharLimit(portfolioNameRef.current.offsetWidth*0.075);
+  }, []);
+
   return (
-    <li>
+    <li ref={portfolioNameRef}>
       <NavLink
         to={to}
         className={classes["portfolios__link"]}
@@ -19,14 +28,15 @@ const PortfolioLink = ({ to, pname, marketValue }) => {
         }
       >
         {
-          pname.length > 22
-            ? <span title={pname}>{pname.slice(0,22).trim() + "..."}</span>
+          pname.length > charLimit
+            ? <span title={pname}>{pname.slice(0,charLimit).trim() + "..."}</span>
             : <span>{pname}</span>
         }
         <span>{marketValue}</span>
       </NavLink>
     </li>
   );
+
 }
 
 export default PortfolioLink;
