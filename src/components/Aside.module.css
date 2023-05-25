@@ -1,0 +1,40 @@
+.aside {
+  --left-right-padding: 1rem;
+
+  grid-column: content-start / aside-main;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-areas:
+    "brand"
+    "portfolios-list"
+    "nav";
+
+  height: 100%; /*App container 100vh*/
+  /* overflow: hidden; */
+
+  background-color: hsl(var(--clr-bg1-100));
+  box-shadow: 0 0 2px 1px hsl(var( --clr-bg1-900));
+}
+
+.brand {
+  grid-area: brand;
+  
+  /* border-bottom: 0.1rem solid hsl(var( --clr-bg1-900)); */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 var(--left-right-padding);
+}
+
+.portfolios-list {
+  grid-area: portfolios-list;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.nav {
+  grid-area: nav;
+}

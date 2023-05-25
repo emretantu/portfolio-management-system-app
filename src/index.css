@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("fonts/fonts.css");
+
+/*Custom Proporties*/
+:root {
+
+  /*Black*/
+  --clr-accent1-800: 0, 0%, 7%;
+  
+  /*Greenish*/
+  --clr-accent2-900: 170, 100%, 15%;
+  --clr-accent2-800: 170, 90%, 20%;
+  --clr-accent2-700: 170, 80%, 23%;
+  --clr-accent2-600: 170, 70%, 25%;
+  --clr-accent2-500: 170, 60%, 26%;
+  --clr-accent2-400: 170, 50%, 27%;
+  --clr-accent2-300: 170, 45%, 33%;
+  --clr-accent2-200: 170, 40%, 38%;
+  --clr-accent2-100: 170, 35%, 42%;
+
+  /*Brownish*/
+  --clr-accent3-400: 28, 45%, 57%;
+
+  /*Pink*/
+  --clr-accent4-400: 6, 36%, 82%;
+
+  /*White - Gray*/ 
+  --clr-bg1-900: 0, 0%, 80%;
+  --clr-bg1-800: 0, 0%, 85%;
+  --clr-bg1-700: 0, 0%, 85%;
+  --clr-bg1-600: 0, 0%, 90%;
+  --clr-bg1-500: 0, 0%, 92%;
+  --clr-bg1-400: 0, 0%, 94%;
+  --clr-bg1-300: 0, 0%, 96%;
+  --clr-bg1-200: 0, 0%, 98%;
+  --clr-bg1-100: 0, 0%, 100%;
+
+  /*Fonts*/
+  --ff-base: 'Roboto', sans-serif;
+
+  --fw-base-100: 100;
+  --fw-base-300: 300;
+  --fw-base-400: 400;
+  --fw-base-500: 500;
+  --fw-base-700: 700;
+  --fw-base-900: 900;
+
+  /*Border Radius*/
+  --bradius-900: 2rem;
+  --bradius-800: 1.5rem;
+  --bradius-700: 1rem;
+  --bradius-600: 0.7rem;
+  --bradius-500: 0.5rem;
+  --bradius-400: 0.4rem;
+  --bradius-300: 0.3rem;
+  --bradius-200: 0.2rem;
+  --bradius-100: 0.1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*CSS Reset*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*General Layout*/
+
+#root {
+  display: grid;
+  /* grid-template-columns: [page-start] 1fr [content-start] 1024px [content-end] 1fr [page-end]; */
+  grid-template-columns: [content-start] 1fr [content-end];
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: hsl(var(--clr-bg1-300));
+}
+
+body * {
+  color: hsl(var(--clr-accent1-800));
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 95%, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 60%);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 45%);
 }

@@ -1,0 +1,6 @@
+.brand__link {
+  color: hsl(var(--clr-accent2-400));
+  text-decoration: none;
+  font-weight: var(--fw-base-500);
+  font-size: 2rem;
+}

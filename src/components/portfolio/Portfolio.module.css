@@ -1,0 +1,28 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "assets the-content";
+  column-gap: 0.6rem;
+
+  height: 100%;
+}
+
+.portfolio > * {
+  background-color: hsl(var(--clr-bg1-100));
+  border-radius: var(--bradius-600);
+  box-shadow: 0 0 2px hsl(var(--clr-bg1-800));
+}
+
+.assets {
+  grid-area: assets;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  grid-area: the-content;
+  padding: 1rem; /*!*/
+  overflow-y: auto;
+  overflow-x: hidden;
+}

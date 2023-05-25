@@ -1,0 +1,31 @@
+.main {
+  --base-padding: 1.4rem;
+
+  grid-column: aside-main / content-end;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% calc(90% - var(--base-padding));
+  grid-template-areas:
+    "header"
+    "content-container";
+
+  height: 100vh;
+  min-height: 30rem;
+
+  padding: 0 var(--base-padding) 0 var(--base-padding);
+
+  background-color: hsl(var(--clr-bg1-400));
+
+}
+
+.title {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+}
+
+.content-container {
+  grid-area: content-container;
+  height: 100%;
+}

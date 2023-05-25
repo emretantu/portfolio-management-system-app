@@ -1,0 +1,15 @@
+.nav {
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 100%;
+  padding-inline: var(--left-right-padding);
+
+  list-style: none;
+}
