@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import classes from "./PortfolioLink.module.css"
 
 const PortfolioLink = ({ to, pname, marketValue }) => {
@@ -18,7 +18,11 @@ const PortfolioLink = ({ to, pname, marketValue }) => {
           }
         }
       >
-        <span>{pname}</span>
+        {
+          pname.length > 22
+            ? <span title={pname}>{pname.slice(0,22).trim() + "..."}</span>
+            : <span>{pname}</span>
+        }
         <span>{marketValue}</span>
       </NavLink>
     </li>
