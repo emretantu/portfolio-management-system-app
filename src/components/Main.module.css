@@ -5,10 +5,13 @@
   
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh calc(90vh - var(--base-padding));
+  grid-template-rows: 10% calc(90% - var(--base-padding));
   grid-template-areas:
     "header"
     "content-container";
+
+  height: 100vh;
+  min-height: 30rem;
 
   padding: 0 var(--base-padding) 0 var(--base-padding);
 
