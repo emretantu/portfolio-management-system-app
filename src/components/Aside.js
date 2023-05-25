@@ -1,6 +1,7 @@
 import classes from "./Aside.module.css";
 import PortfoliosList from "./portfolios/PortfoliosList";
 import Brand from "./brand/Brand";
+import MainNav from "./mainnav/MainNav";
 
 const Aside = () => {
   return (
@@ -14,7 +15,7 @@ const Aside = () => {
       </section>
 
       <section className={classes.nav}>
-        
+        <MainNav />
       </section>
     </aside>
   );
