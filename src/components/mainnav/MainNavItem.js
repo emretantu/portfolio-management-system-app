@@ -1,13 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const MainNavItems = ({ to, icon }) => {
+const MainNavItem = ({ to, icon, iconActive }) => {
   return (
     <li>
-      <Link to={to}>
-        <img src={icon} alt="Portfolio" />
-      </Link>
+      <NavLink to={to}>
+        {
+          ({isActive}) => {
+            if (isActive) {
+              return <img src={iconActive} alt="Portfolio" />;
+            } else {
+              return <img src={icon} alt="Portfolio" />;
+            }
+          }
+        }
+      </NavLink>
     </li>
   );
 }
 
-export default MainNavItems;
+export default MainNavItem;

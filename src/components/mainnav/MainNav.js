@@ -12,8 +12,9 @@ const MainNav = () => {
     <nav>
       <ul>
         <MainNavItem
-          to={"/"}
+          to={"/portfolios"}
           icon={pieIcon}
+          iconActive={pieIconActive}
         />
       </ul>
     </nav>
