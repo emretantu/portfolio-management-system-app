@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import classes from "./MainNavItem.module.css"
 
 const MainNavItem = ({ to, icon, iconActive }) => {
   return (
-    <li>
+    <li className={classes["nav__item"]}>
       <NavLink to={to}>
         {
           ({isActive}) => {
